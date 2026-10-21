@@ -29,7 +29,7 @@ jobs:
       - run: uv run playwright install --with-deps
 
       - env:
-          USER: ${{secrets.DAIGLER_USER}}
-          PASS: ${{secrets.DAIGLER_PASS}}
+          USER: ${{secrets.USER}}
+          PASS: ${{secrets.PASS}}
         run: uv run daigler.py
 
